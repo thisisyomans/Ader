@@ -1,7 +1,7 @@
 from PIL import Image, ImageFilter
 import webbrowser
 
-filename = 'tests/avocadoimage/avocados.jpg'
+filename = 'tests/car1/bmw1.jpeg'
 
 img = Image.open(filename)
 #webbrowser.open(filename)
@@ -14,11 +14,11 @@ if img.width > img.height:
 #	img.save('tests/avocadoimage/instaedit.jpg')
 	area = (img.width/2 - img.height/2, img.height/2 - img.height/2, img.width/2 + img.height/2, img.height/2 + img.height/2)
 	cropped = img.crop(area)
-	cropped.save('tests/avocadoimage/instaedit.jpg')
+	cropped.save('tests/car1/instaedit.jpg')
 elif img.height > img.width:
 	size = (img.width, img.width)
 #	img = img.resize(size, Image.ANTIALIAS)
 #	img.save('tests/avocadoimage/instaedit.jpg')
 	area = (img.width/2 - img.width/2, img.height/2 - img.width/2, img.width/2 + img.width/2, img.height/2 + img.width/2)
 	cropped = img.crop(area)
-	cropped.save('tests/avocadoimage/instaedit.jpg')
+	cropped.save('tests/car1/instaedit.jpg')
